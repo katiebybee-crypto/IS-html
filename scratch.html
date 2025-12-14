@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<!--
+Katie Bybee
+001
+12-1-25
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+</head>
+<body style="background-color: bisque;">
+
+    <a href="index.html">Home</a>
+
+    <h4> About Me</h4>
+  
+
+    <p>My name is Katie and I have grown up here in Utah. I love to run, play spikeball, 
+        hangout with my family and do accounting homework. I served my mission in Sweden and although
+        it was SO cold I loved it so much. I have seven siblings and am the funniest of them all. Lol
+        jk, they are all a hoot. I drive the coolest Honda Civic because the brakes are spraypainted red and 
+        the back has a big fin on it to help me me more aerodynamic and drive faster.</p>
+
+        
+
+
+        
+            
+        <img src="../startbootstrap-clean-blog-gh-pages/assets/img/skelleftea.jpeg">
+        <img src="../startbootstrap-clean-blog-gh-pages/assets/img/tunnels.jpeg"> 
+        <img src="../startbootstrap-clean-blog-gh-pages/assets/img/accounting.png">
+
+       <ol>
+            <li>Favorite Things
+                <ul>
+                        <li>Saturday Long Runs</li>
+                        <li>Sunday walks</li>
+                        <li>Spikeball</li>
+                        <li>F.R.I.E.N.D.S.</li>
+                        <li>Ice Cream</li>
+                        <li>Aquaphor</li>
+                </ul>
+             </li>   
+            <li>Favorite Places
+                <ul>
+                    <li>Home</li>
+                    <li>Sweden</li>
+                    <li>Costco</li>
+                    <li>The Track</li>
+                    <li>The Mountains</li>
+                    <li>BYU Library</li>
+                </ul>
+            </li>
+            <li>Favorite Movies
+                <ul>
+                    <li>How to Lose a Guy in 10 Days</li>
+                    <li>Hunt for the Wilderpeople</li>
+                    <li>Barbie</li>
+                    <li>10 Things I Hate About You</li>
+                    <li>Miss Congeniality</li>
+                    <li>Wicked</li>
+                </ul>
+
+            </li>
+       </ol>
+
+      
+
+
+
+
+</style>
+</head>
+<body>
+
+
+<div class="app">
+<h1>Mood Generator</h1>
+
+
+
+<select id="mood">
+<option value="happy">😊 Happy</option>
+<option value="sarcastic">😏 Sarcastic</option>
+<option value="brainy">🧠 Brainy</option>
+<option value="tired">😴 Tired</option>
+</select>
+
+
+<button onclick="generate()">Generate</button>
+
+
+<div class="output" id="output"></div>
+
+
+
+<script>
+const responses = {
+happy: [
+"Why did the smile bring a ladder? Because happiness is on another level!",
+"Today is a good day to have a good day 🌞",
+"Happiness is contagious—thanks for spreading it!"
+],
+sarcastic: [
+"Oh great, another button click. Thrilling.",
+"I would explain it, but I left my patience at home.",
+"Wow. Truly groundbreaking stuff here."
+],
+brainy: [
+"Riddle: What has keys but no locks? A keyboard.",
+"Did you know? The human brain has about 86 billion neurons.",
+"Logic is the beginning of wisdom, not the end."
+],
+tired: [
+"I would generate energy, but even I need a nap.",
+"Rest is productive. Don’t forget that.",
+"404: Motivation not found. Try again tomorrow."
+]
+};
+
+
+function generate() {
+const mood = document.getElementById('mood').value;
+const options = responses[mood];
+const randomIndex = Math.floor(Math.random() * options.length);
+document.getElementById('output').textContent = options[randomIndex];
+}
+</script> 
+<br><br><br>
+<a href="tableau.html">Tableau Graph</a>
+
+
+
+
+<br><br><br>
+
+ Back to the <a href="#top">Top</a>
+
+</body>
+</html>
